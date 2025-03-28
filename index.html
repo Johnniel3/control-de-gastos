@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estiles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+    
+        <header class="cabeza">
+            <figure class="logo">
+                <img src="assets/logo2.png" alt="Logo">
+            </figure>
+    
+            <nav class="navbar">
+                <a class="abrirModal" href="#"></a>
+            </nav>
+        </header>
+    
+        <dialog class="modal">
+    
+            <form class="content">
+                <label>Cual es tu presupuesto?</label>
+                <input class="modalInput" type="text">
+                <button type="submit" class="cerrarModal">Enviar</button>
+                <!-- <span class="alertModal">hola pendejo</span> -->
+            </form>
+    
+        </dialog>
+    
+        <div class="wrappSpinner">
+            <div class="sk-fading-circle">
+                <div class="sk-circle1 sk-circle"></div>
+                <div class="sk-circle2 sk-circle"></div>
+                <div class="sk-circle3 sk-circle"></div>
+                <div class="sk-circle4 sk-circle"></div>
+                <div class="sk-circle5 sk-circle"></div>
+                <div class="sk-circle6 sk-circle"></div>
+                <div class="sk-circle7 sk-circle"></div>
+                <div class="sk-circle8 sk-circle"></div>
+                <div class="sk-circle9 sk-circle"></div>
+                <div class="sk-circle10 sk-circle"></div>
+                <div class="sk-circle11 sk-circle"></div>
+                <div class="sk-circle12 sk-circle"></div>
+            </div>
+        </div>
+    
+        <main class="grafico">
+    
+            <div class="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+    
+            <section class="elementos">
+            </section>
+        </main>
+    
+        <div class="data">
+            <div class="textos">
+                <p class="positivo">Mi Presupuesto: <span class="miPresupuesto"></span></p>
+            </div>
+            <div class="textos">
+                <p>Restante: <span class="miRestante"></span></p>
+            </div>
+        </div>
+    
+        <form class="funcional" action="">
+            <div class="wrapp">
+                <h3>Agregar gasto:</h3>
+            </div>
+            <div class="inputs">
+                <label class="label" for="nombre">Descripcion</label>
+                <input class="campo" id="nombre" type="text">
+            </div>
+            <div class="inputs">
+                <label class="label" for="cantidad">Monto</label>
+                <input class="campo" id="cantidad" type="texto">
+            </div>
+            <div class="wrappBtn">
+                <button class="submit">
+                    <p>+</p>
+                </button>
+            </div>
+    
+            <div class="alerta">
+            </div>
+        </form>
+    </div>
+
+    <footer class="pie">
+        <p> de <span>Johnniel</span> con 🫶</p>
+        <div class="links">
+            <p>mis enlaces :</p>
+            <a href="https://github.com/Johnniel3" target="_blank">
+                <img src="assets/github-logo-36.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/johnniel-orozco-87b52a301/" target="_blank">
+                <img src="assets/linkedin-square-logo-36.png" alt="">
+            </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

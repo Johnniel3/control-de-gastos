@@ -87,7 +87,6 @@ class CrearGasto {
             msjAlerta.remove();
         }, 2000);
     }
-
     agregarGastoListado(gastos) {
         this.limpiarHTML();// eliminar el html previo
         //iterar sobre los gastos
@@ -295,6 +294,7 @@ function generarGasto(event) {
     interface.graficaItems(gastos, restante);
     //refrescar el formulario
     formulario.reset();
+    descripcion.focus();
 }
 //========Eliminar Gasto =============//
 function eliminarGasto(id) {

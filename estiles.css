@@ -3,9 +3,10 @@
     --color-white: #c9c9c9;
     --color-fondo: #c7dbd5;
     --color-borde: #973406;
-    --color-amarillo: #1d38afef;
+    --color-amarillo: #e4d9b691;
     --color-letras: #082222;
     --box-shadow:  0 0 5px #000000d8;
+    --gradient: radial-gradient(rgb(120, 159, 218), rgb(131, 150, 109));
 }
 
 /* formateo por defecto */
@@ -20,7 +21,7 @@
 /* Agregando Estilos */
 body {
     width: 100%;
-    background-image: url(https://img.freepik.com/vector-gratis/fondo-digital-azul-copia-espacio_23-2148821698.jpg?t=st=1743198146~exp=1743201746~hmac=0b84a9bc9aa2071ea6bd7b20ad96dbd775f2a15c80763ea0548d4af99e3af5f5&w=740);
+    background-image: var(--gradient);
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -438,7 +439,7 @@ body {
             height: 40px;
             width: 120px;
             border-radius: 5px;
-            background-color: var(--color-amarillo);
+            background-image: linear-gradient(45deg,rgb(9, 255, 0), rgb(0, 110, 255));
             cursor: pointer;
             font-size: 2rem;
             border: none;
